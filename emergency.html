@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* Emergency Card Styling */
+.emergency-card {
+    max-width: 450px;
+    width: 90%;
+    background-color: #b30000; /* Emergency Red */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    border: 3px solid white;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.alert-icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #ffeb3b; /* Warning Yellow */
+}
+
+.emergency-card h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Big Pulse Call Button */
+.call-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    color: #b30000;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.call-btn:hover {
+    background-color: #ffeb3b;
+    transform: scale(1.05);
+}
+
+.emergency-steps {
+    text-align: left;
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.emergency-steps h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.emergency-steps ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.emergency-steps li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.emergency-steps .material-icons {
+    font-size: 18px;
+    color: #4caf50;
+}
+   header{
+                    background-color: lemonchiffon;
+                    text-align: left;
+                    padding: 10px;
+                }
+                 nav{
+   
+    text-align: center;
+    padding-block-end: 20px;
+
+ }
+nav button{
+    margin: 0 10px;
+    background-color: lightpink;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;}
+                footer{
+                    text-align: center;
+                    padding-block-start: 100px;
+                    background-color: lightyellow;
+                }
+
+</style>
+</head>
+<body>
+    <header>
+<img src="logo.png" control width="40" height="40" alt="Health Clinic Center Logo">
+ <h1>Welcome to Health Clinic Center</h1>
+</header>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='about.html'">About Us</button>
+            <button onclick="location.href='register.html'">Register</button>
+            <button onclick="location.href='emergency.html'">Emergency</button>
+            <button onclick="location.href='message.html'">Messages</button>
+            <button onclick="location.href='services.html'">Services</button>
+            <button onclick="location.href='setting.html'">Setting</button>
+        </nav>
+    <main class="main-content">
+        <div class="emergency-card">
+            <span class="material-icons alert-icon">report_problem</span>
+            <h1>EMERGENCY CONTACT</h1>
+            <p>If you are experiencing a life-threatening situation, call immediately.</p>
+            
+            <a href="tel:+250788000000" class="call-btn">
+                <span class="material-icons">phone_in_talk</span>
+                CALL: +250 788 000 000
+            </a>
+
+            <div class="emergency-steps">
+                <h3>Quick Actions:</h3>
+                <ul>
+                    <li><span class="material-icons">check_circle</span> Stay calm and breathe.</li>
+                    <li><span class="material-icons">check_circle</span> State your location clearly.</li>
+                    <li><span class="material-icons">check_circle</span> Follow the operator's instructions.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+<footer>
+    <pre>
+        email: cm.kevin2009@gmail.com
+        phone number: (123) 456-7890
+        <p>&copy; 2026 Health Clinic Center. All rights reserved.</p>
+            </pre>
+</footer>
+</body>
+</html>

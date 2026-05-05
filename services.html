@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services - Health Clinic Center</title>
+<style>
+    
+            
+.services-wrapper {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-title {
+    color: #5d1a5d;
+    font-size: 22px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+.service-tile {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.service-tile:hover {
+    transform: translateY(-5px);
+    border-color: lightpink;
+    background-color: #fffdec;
+}
+
+
+.service-tile .material-icons {
+    font-size: 35px;
+    color: #5d1a5d; 
+    margin-bottom: 10px;
+}
+
+.service-tile h3 {
+    font-size: 13px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.service-tile p {
+    font-size: 10px;
+    color: #777;
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+footer{
+      
+            text-align: center;
+           padding-block-start: 80px;
+           background-color: lightyellow;}
+             nav{
+   
+    text-align: center;
+    padding-block-end: 20px;
+
+ }
+nav button{
+    margin: 0 10px;
+    background-color: lightpink;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;}
+                   h1{
+                    text-align: center;
+                }
+</style>
+<body>
+    <header>
+<img src="logo.png" control width="40" height="40" alt="Health Clinic Center Logo">
+ <h1>Welcome to Health Clinic Center</h1>
+</header>
+    <nav>
+        <button><a href="index.html"> home</a></button>    
+        <button><a href="about.html"> about</a></button>
+        <button><a href="register.html"> register</a></button>
+            <button><a href="emergency.html"> emergency</a></button>
+            <button><a href="message.html">messages</a></button>
+            <button><a href="services.html">services</a></button>
+            <button><a href="setting.html"> setting</a></button>
+        </nav>
+        <main class="main-content">
+            <div class="services-wrapper">
+                <h1 class="page-title">OUR SERVICES</h1>
+                
+                <div class="services-grid">
+                    <div class="service-tile">
+                        <span class="material-icons">medication</span>
+                        <h3>Pharmacy</h3>
+                        <p>24/7 medicine supply</p>
+                    </div>
+
+                    <div class="service-tile">
+                        <span class="material-icons">biotech</span>
+                        <h3>Laboratory</h3>
+                        <p>Blood & DNA tests</p>
+                    </div>
+
+                    <div class="service-tile">
+                        <span class="material-icons">monitor_heart</span>
+                        <h3>Cardiology</h3>
+                        <p>Heart health checks</p>
+                    </div>
+
+                    <div class="service-tile">
+                        <span class="material-icons">visibility</span>
+                        <h3>Eye Clinic</h3>
+                        <p>Vision & surgery</p>
+                    </div>
+
+                    <div class="service-tile">
+                        <span class="material-icons">child_care</span>
+                        <h3>Pediatrics</h3>
+                        <p>Children's healthcare</p>
+                    </div>
+
+                    <div class="service-tile">
+                        <span class="material-icons">psychology</span>
+                        <h3>Counseling</h3>
+                        <p>Mental health support</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <reflection-game v-if="currentPage === 'game'"></reflection-game>
+<footer>
+    <pre>
+        email: cm.kevin2009@gmail.com
+        phone number: (123) 456-7890
+        <p>&copy; 2026 Health Clinic Center. All rights reserved.</p>
+   </pre>
+</footer>
+</body>
+</html>

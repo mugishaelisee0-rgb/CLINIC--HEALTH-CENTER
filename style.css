@@ -1,0 +1,160 @@
+
+.settings-card {
+    max-width: 400px;
+    background-color: #5d1a5d;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.setting-item {
+    margin: 20px 0;
+}
+
+.setting-item p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.mode-btn, .font-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightpink;
+    color: #5d1a5d;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.mode-btn.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a !important; 
+}
+
+body.dark-mode .layout-container {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .sidebar {
+    background-color: #333;
+}
+
+
+body.light-mode {
+    background-color: #fdf2e9;
+}
+  nav{
+                    text-align: center;
+                    margin-top: 20px;
+                    text-align: center;
+                    padding-block-end: 60px;
+                    background-color: bisque;
+            
+                }
+                nav button{
+                    margin: 0 10px;
+                    background-color: lightpink;
+                    color: black;
+                    border-radius: 20px;
+                    text-decoration: none;
+                }
+                footer{
+      
+            text-align: center;
+           padding-block-start: 80px;
+           background-color: lightyellow;}
+           /* Container for the logs */
+.message-log {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+    border-radius: 10px;
+    max-height: 150px; /* Limits height */
+    overflow-y: auto;  /* Adds scrollbar if list is long */
+    padding: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Individual Log Style */
+.log-entry {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.log-entry:last-child {
+    border-bottom: none;
+}
+
+.log-text p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.log-text span {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.status-icon {
+    font-size: 18px;
+}
+
+.status-icon.success {
+    color: #4caf50; 
+}
+
+.status-icon.pending {
+    color: #ffeb3b; 
+}
+
+
+.message-log::-webkit-scrollbar {
+    width: 5px;
+}
+.message-log::-webkit-scrollbar-thumb {
+    background: lightpink;
+    border-radius: 10px;
+}
+.game-card {
+    background-color: #5d1a5d;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    max-width: 400px;
+}
+
+.breath-circle {
+    background: radial-gradient(circle, lightpink, #ffb6c1);
+    border-radius: 50%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 4s ease-in-out; /* Smooth 4-second animation */
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+}
+
+.breath-circle span {
+    font-weight: bold;
+    color: #5d1a5d;
+    font-size: 14px;
+}
+
+.game-hint {
+    font-style: italic;
+    font-size: 12px;
+    opacity: 0.8;
+}

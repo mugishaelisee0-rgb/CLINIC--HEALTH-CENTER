@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            fieldset{
+                background-color: antiquewhite;
+                color :black;
+                border-radius: 20 px;
+                text-align: center;
+                height: 200px;
+                width: 400px;
+                margin: auto;
+padding-block-end: 20px;
+            }
+            input{
+                border-radius: 5px;
+                color :black;
+                background-color: white;
+            }
+                button{
+                    border-radius: 5px;
+                    color :black;
+                    background-color: white;
+                    height: 20px;
+                    width: 80px;
+                }
+               nav{
+   
+    text-align: center;
+    padding-block-end: 20px;
+
+ }
+nav button{
+    margin: 0 10px;
+    background-color: lightpink;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;}
+                header{
+                    background-color: rgb(211, 207, 171);
+                    text-align: left;
+                    padding: 10px;
+                }
+           .div2{
+    background-color: lightyellow;
+    padding: 20px;
+           }
+           h1{
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+           }
+           footer{
+      
+            text-align: center;
+           padding-block-start: 80px;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+<img src="logo.png" control width="40" height="40" alt="Health Clinic Center Logo">
+ <h1>Welcome to Health Clinic Center</h1>
+</header>
+    <nav>
+        <button><a href="index.html">Home</a></button>
+        <button><a href="about.html">About Us</a></button>
+        <button><a href="register.html">Register</a></button>
+        <button><a href="emergency.html">Emergency</a></button>
+        <button><a href="message.html">messages</a></button>
+        <button><a href="services.html">Services</a></button>
+        <button><a href="setting.html">Setting</a></button>
+    </nav>
+    <h1> this is registraction form of patient</h1>
+        <fieldset>
+            <legend>Register</legend>
+            <form action="register.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <button type="submit">Register</button>
+            </form>
+        </fieldset>
+        <footer><pre>
+        email: cm.kevin2009@gmail.com
+        phone number: (123) 456-7890
+        <p>&copy; 2026 Health Clinic Center. All rights reserved.</p>
+   </pre>
+
+        </footer>
+    </body>
+</html>
